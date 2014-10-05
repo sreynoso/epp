@@ -1,0 +1,49 @@
+//---------------------------------\\
+//----------Table of Content-------\\
+//---------------------------------\\
+
+// 1 Font Rem: Convert px to rem
+// 2 respond To: Add media query's breakpoint
+
+
+
+//------------Containers-----------\\
+
+@mixin font-rem($fontweight:null, $fontsize:null, $lineheight:null, $fontfamily:null) {
+
+    @if $fontfamily !=null {
+        font-family: $fontfamily;
+    }
+
+    @if $lineheight !=null {
+        line-height: $lineheight;
+        line-height: ($lineheight / 16px) * 1rem;
+    }
+
+    @if $fontsize !=null {
+        font-size: $fontsize;
+        font-size: ($fontsize / 16px) * 1rem;
+    }
+    
+    @if $fontweight !=null {
+        font-weight: $fontweight;
+    }
+}
+
+@mixin respond-to($media) {
+    @if $media == ph {
+        @media only screen and (max-width:703px) { 
+            @content;
+        } 
+    }
+    @else if $media == tb {
+            @media only screen and (min-width:704px) and (max-width:1087px) { 
+                @content; 
+        } 
+    }
+    @else if $media == dt {
+        @media only screen and (min-width:1088px) { 
+            @content; 
+        } 
+    } 
+}

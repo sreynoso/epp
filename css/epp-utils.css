@@ -1,0 +1,11 @@
+.input--block {
+  width: 100%;
+}
+
+.display-table {
+  display: table;
+}
+.display-table > * {
+  display: table-cell;
+  vertical-align: middle;
+}

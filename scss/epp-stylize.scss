@@ -1,0 +1,23 @@
+@import "compass/css3/";
+@import "epp-mixins";
+
+
+input{
+    &::-webkit-input-placeholder{
+        font-weight:normal;
+    }
+    &:-moz-placeholder{
+        font-weight:normal;  
+    }
+    &::-moz-placeholder{
+        font-weight:normal;
+    }
+    &:-ms-input-placeholder {
+        font-weight:normal;
+    }
+}
+
+input[type="text"], input[type="search"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="date"], input[type="datetime"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime-local"]{
+    margin-bottom: 8px;
+}
+

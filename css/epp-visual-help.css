@@ -1,0 +1,37 @@
+body {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 90%, rgba(255, 0, 0, 0.5) 100%), linear-gradient(90deg, transparent 90%, rgba(255, 0, 0, 0.5) 100%);
+  background-size: 8px 8px;
+  background-position: 0px 0px;
+}
+
+a, blockquote, caption, dd, figcaption, form, h1, h2, h3, h4, h5, h6, p, pre, label, li {
+  background: rgba(24, 65, 192, 0.2);
+}
+
+[class*="epp-ctn"] {
+  background: rgba(50, 50, 50, 0.4);
+}
+
+[class*="epp-cl-"] {
+  outline: 1px solid red;
+}
+
+/*Phone de 0 a 703*/
+@media (max-width: 703px) {
+  body:before {
+    content: "PHONE 0 a 703";
+  }
+}
+/*Tablet 704 a 1087*/
+@media (min-width: 704px) and (max-width: 1087px) {
+  body:before {
+    content: "TABLET 704 a 1087";
+  }
+}
+/*Desktop*/
+@media (min-width: 1088px) {
+  body:before {
+    content: "DESKTOP desde 1088";
+  }
+}
