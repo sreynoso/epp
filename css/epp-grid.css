@@ -19,27 +19,22 @@
 
 .epp-ctn--xxl {
   max-width: 1344px;
-  padding: 0 16px;
 }
 
 .epp-ctn--xl {
   max-width: 1248px;
-  padding: 0 16px;
 }
 
 .epp-ctn--lg {
   max-width: 1056px;
-  padding: 0 16px;
 }
 
 .epp-ctn--md {
   max-width: 960px;
-  padding: 0 16px;
 }
 
 .epp-ctn--sm {
   max-width: 768px;
-  padding: 0 16px;
 }
 
 .epp-ctn--gtr > [class*="epp-cl-"] {
@@ -579,7 +574,7 @@
 }
 @media (max-width: 703px) {
   .hidden--ph {
-    display: none;
+    display: none !important;
   }
 
   .epp-cl-1--ph {
@@ -912,7 +907,7 @@
 }
 @media (min-width: 704px) and (max-width: 1087px) {
   .hidden--tb {
-    display: none;
+    display: none !important;
   }
 
   .epp-cl-1--tb {
@@ -1241,7 +1236,7 @@
 }
 @media (min-width: 1088px) {
   .hidden--dt {
-    display: none;
+    display: none !important;
   }
 
   .epp-cl-1--dt {
