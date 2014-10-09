@@ -1,0 +1,31 @@
+@import "compass/css3/";
+@import "epp-mixins";
+
+.input--block{
+  width: 100%;
+}
+
+.display-table{
+  display:table;
+  & > *{
+      display:table-cell;
+      vertical-align:middle;
+    }
+}
+
+.align--right{
+	text-align: right;
+}
+.align--left{
+	text-align: left;
+}
+.align--right{
+	text-center: center;
+}
+
+.ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
