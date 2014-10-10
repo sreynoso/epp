@@ -16,21 +16,21 @@ a,blockquote,caption,dd,figcaption,form,h1,h2,h3,h4,h5,h6,p,pre,label,li{
 [class*="epp-cl-"] {
 	outline:1px solid red;
 }
-/*Phone de 0 a 703*/
-@media (max-width:703px){
+/*Phone de 0 a 767*/
+@media (max-width:767px){
     body:before{
-        content:"PHONE 0 a 703";
+        content:"PHONE 0 a 767";
     }
 }
-/*Tablet 704 a 1087*/
-@media (min-width:704px) and (max-width:1087px){
+/*Tablet 768 a 1151*/
+@media (min-width:768px) and (max-width:1151px){
     body:before{
-        content:"TABLET 704 a 1087";
+        content:"TABLET 768 a 1151";
     }
 }
 /*Desktop*/
-@media (min-width:1088px){
+@media (min-width:1152px){
     body:before{
-        content:"DESKTOP desde 1088";
+        content:"DESKTOP desde 1152";
     }
 }

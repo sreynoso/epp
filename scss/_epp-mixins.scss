@@ -1,14 +1,3 @@
-//---------------------------------\\
-//----------Table of Content-------\\
-//---------------------------------\\
-
-// 1 Font Rem: Convert px to rem
-// 2 respond To: Add media query's breakpoint
-
-
-
-//------------Containers-----------\\
-
 @mixin font-rem($fontweight:null, $fontsize:null, $lineheight:null, $fontfamily:null) {
 
     @if $fontfamily !=null {
@@ -32,17 +21,17 @@
 
 @mixin respond-to($media) {
     @if $media == ph {
-        @media only screen and (max-width:703px) { 
+        @media only screen and (max-width:767px) { 
             @content;
         } 
     }
     @else if $media == tb {
-            @media only screen and (min-width:704px) and (max-width:1087px) { 
+            @media only screen and (min-width:768px) and (max-width:1151px) { 
                 @content; 
         } 
     }
     @else if $media == dt {
-        @media only screen and (min-width:1088px) { 
+        @media only screen and (min-width:1152px) { 
             @content; 
         } 
     } 

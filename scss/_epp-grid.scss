@@ -295,9 +295,31 @@
 
 //-----------Containers------------\\
 
-// Containers Phone 0 to 703
 
-@media (max-width:415px){
+// Containers Phone 0 to 767
+
+@media (max-width:287px){
+    .epp-ctn--xxl{
+        max-width:100%;
+    }
+    .epp-ctn--xl{
+        max-width:100%;
+    }
+    .epp-ctn--lg{
+        max-width:100%;
+    }
+    .epp-ctn--md{
+        max-width:100%;
+    }
+    .epp-ctn--sm{
+        max-width:100%;
+    }
+}
+
+@media (min-width:288px) and (max-width:383px){
+    .epp-ctn--xxl{
+        max-width:288px;
+    }
     .epp-ctn--xl{
         max-width:288px;
     }
@@ -311,7 +333,11 @@
         max-width:288px;
     }
 }
-@media (min-width:416px) and (max-width:511px){
+
+@media (min-width:384px) and (max-width:479px){
+    .epp-ctn--xxl{
+        max-width:384px;
+    }
     .epp-ctn--xl{
         max-width:384px;
     }
@@ -325,12 +351,16 @@
         max-width:384px;
     }
 }
-@media (min-width:512px) and (max-width:607px){
+
+@media (min-width:480px) and (max-width:575px){
+    .epp-ctn--xxl{
+        max-width:480px;
+    }
     .epp-ctn--xl{
-        max-width:480px; 
+        max-width:480px;
     }
     .epp-ctn--lg{
-        max-width:480px; 
+        max-width:480px;
     }
     .epp-ctn--md{
         max-width:480px;
@@ -339,12 +369,16 @@
         max-width:480px;
     }
 }
-@media (min-width:608px) and (max-width:703px){
+
+@media (min-width:576px) and (max-width:671px){
+    .epp-ctn--xxl{
+        max-width:576px;
+    }
     .epp-ctn--xl{
-        max-width:576px; 
+        max-width:576px;
     }
     .epp-ctn--lg{
-        max-width:576px; 
+        max-width:576px;
     }
     .epp-ctn--md{
         max-width:576px;
@@ -354,14 +388,33 @@
     }
 }
 
-// Containers Tablet 704 to 1087
+@media (min-width:672px) and (max-width:767px){
+    .epp-ctn--xxl{
+        max-width:672px;
+    }
+    .epp-ctn--xl{
+        max-width:672px;
+    }
+    .epp-ctn--lg{
+        max-width:672px;
+    }
+    .epp-ctn--md{
+        max-width:672px;
+    }
+    .epp-ctn--sm{
+        max-width:672px;
+    }
+}
 
-@media (min-width:704px) and (max-width:799px){
+@media (min-width:672px) and (max-width:767px){
+    .epp-ctn--xxl{
+        max-width:672px;
+    }
     .epp-ctn--xl{
-        max-width:672px; 
+        max-width:672px;
     }
     .epp-ctn--lg{
-        max-width:672px; 
+        max-width:672px;
     }
     .epp-ctn--md{
         max-width:672px;
@@ -370,27 +423,36 @@
         max-width:672px;
     }
 }
-@media (min-width:800px) and (max-width:895px){
+
+// Containers Tablet 768 to 1151
+
+@media (min-width:768px) and (max-width:863px){
+    .epp-ctn--xxl{
+        max-width:768px;
+    }
     .epp-ctn--xl{
-        max-width:768px; 
+        max-width:768px;
     }
     .epp-ctn--lg{
-        max-width:768px; 
+        max-width:768px;
     }
     .epp-ctn--md{
-        max-width:768px; 
+        max-width:768px;
     }
     .epp-ctn--sm{
-        padding: 0 16px;
-        max-width:768px; 
+        max-width:768px;
     }
 }
-@media (min-width:896px) and (max-width:991px){
+
+@media (min-width:864px) and (max-width:959px){
+    .epp-ctn--xxl{
+        max-width:864px;
+    }
     .epp-ctn--xl{
-        max-width:864px; 
+        max-width:864px;
     }
     .epp-ctn--lg{
-        max-width:864px; 
+        max-width:864px;
     }
     .epp-ctn--md{
         max-width:864px;
@@ -399,12 +461,16 @@
         max-width:768px;
     }
 }
-@media (min-width:992px) and (max-width:1087px){
+
+@media (min-width:960px) and (max-width:1055px){
+    .epp-ctn--xxl{
+        max-width:960px;
+    }
     .epp-ctn--xl{
-        max-width:960px; 
+        max-width:960px;
     }
     .epp-ctn--lg{
-        max-width:960px; 
+        max-width:960px;
     }
     .epp-ctn--md{
         max-width:960px;
@@ -414,57 +480,83 @@
     }
 }
 
-// Containers Desktop 1088 to 2239
+@media (min-width:1056px) and (max-width:1151px){
+    .epp-ctn--xxl{
+        max-width:1056px;
+    }
+    .epp-ctn--xl{
+        max-width:1056px;
+    }
+    .epp-ctn--lg{
+        max-width:1056px;
+    }
+    .epp-ctn--md{
+        max-width:960px;
+    }
+    .epp-ctn--sm{
+        max-width:768px;
+    }
+}
+// Containers Desktop 1152 to 
+@media (min-width:1152px) and (max-width:1247px){
+    .epp-ctn--xxl{
+        max-width:1152px;
+    }
+    .epp-ctn--xl{
+        max-width:1056px;
+    }
+    .epp-ctn--lg{
+        max-width:1056px;
+    }
+    .epp-ctn--md{
+        max-width:960px;
+    }
+    .epp-ctn--sm{
+        max-width:768px;
+    }
+}
 
-@media (min-width:1088px) and (max-width:1279px){
-    .epp-ctn--xl{
-        max-width:1056px; 
+@media (min-width:1248px) and (max-width:1343px){
+    .epp-ctn--xxl{
+        max-width:1248px;
     }
-    .epp-ctn--lg{
-        max-width:1056px; 
-    }
-    .epp-ctn--md{
-        max-width:960px;
-    }
-    .epp-ctn--sm{
-        max-width:768px;
-    }
-}
-@media (min-width:1280px) and (max-width:1663px){
     .epp-ctn--xl{
         max-width:1248px;
     }
     .epp-ctn--lg{
-        max-width:1056px; 
+        max-width:1056px;
     }
     .epp-ctn--md{
         max-width:960px;
     }
     .epp-ctn--sm{
-        padding: 0 16px;
         max-width:768px;
     }
 }
-@media (min-width:1664px) and (max-width:2239px){
+@media (min-width:1344px){
+    .epp-ctn--xxl{
+        max-width:1344px;
+    }
     .epp-ctn--xl{
         max-width:1248px;
     }
     .epp-ctn--lg{
-        max-width:1056px; 
+        max-width:1056px;
     }
     .epp-ctn--md{
         max-width:960px;
     }
     .epp-ctn--sm{
         max-width:768px;
-    }   
+    }
 }
+
 
 //------------Columns----------\\
 
-// Columns Phone 0 to 703
+// Columns Phone 0 to 767
 
-@media (max-width:703px){
+@media (max-width:767px){
     .hidden--ph{
         display:none!important;
     }
@@ -684,9 +776,9 @@
     }
 }
 
-// Columns Tablet 704 to 1087
+// Columns Tablet 768 to 1151
 
-@media (min-width:704px) and (max-width:1087px){
+@media (min-width:768px) and (max-width:1151px){
     .hidden--tb{
         display:none!important;
     }
@@ -903,9 +995,9 @@
     }
 }
 
-// Columns Desktop from 1088
+// Columns Desktop from 1152
 
-@media (min-width:1088px){
+@media (min-width:1152px){
     .hidden--dt{
         display:none!important;
     }
