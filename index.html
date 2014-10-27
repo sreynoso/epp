@@ -13,22 +13,71 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-
-    <script src="jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<!--[if lt IE 9]>
-		<script src="html5shiv.js"></script>
+		<script src="js/html5shiv.js"></script>
 	<![endif]-->
+<script>
+$( document ).ready(function() {
+   
+
+    $(document).ready(function() {
+
+   function checkWindowSize() {
+
+    if ( $(window).width() > 1000 ) {
+
+        $('body').addClass('ph');
+
+    }
+
+    else {
+
+        $('body').removeClass('ph');
+
+    }
+
+   }
+
+$(window).resize(checkWindowSize);
+
+});
+
+
+    
+    
+});
+</script>
 
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/epp.css">
     <link rel="stylesheet" href="css/epp-visual-help.css">
     <link rel="canonical" href="http://www.8pxplease.com">
 
+
+<style>
+    .ph{
+        background:pink;
+    }
+    </style>
     <title></title>
 </head>
 
 <body>
+
 	<div class="epp-ctn epp-ctn--lg epp-ctn--gtr">
+		<div class="epp-cl-1-3 epp-cl-1-2--tb">
+            <p>1</p>
+        </div>
+        <div class="epp-cl-1-3 epp-cl-1-2--tb">
+            <p>1</p>
+        </div>
+        <div class="epp-cl-1-3 epp-cl-1-2--tb">
+            <p>1</p>
+        </div>
+		<div class="epp-cl-1">
+            <p>1</p>
+        </div>
 		<div class="epp-cl-1-12">
             <p>1-12</p>
         </div>

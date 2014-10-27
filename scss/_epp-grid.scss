@@ -15,13 +15,10 @@
 //      2-2 Columns
 //          2-2-1 Columns Phone 0 to 703
 //              2-2-1-1 Columns Offset Phone
-//              2-2-1-2 Columns Space phone
 //          2-2-2 Columns Tablet 704 to 1087
 //              2-2-2-1 Columns Offset Phone
-//              2-2-2-2 Columns Space phone
 //          2-2-2 Columns Desktop from 1088
 //              2-2-2-1 Columns Offset Desktop
-//              2-2-2-2 Columns Space Desktop
     
 @import "compass/css3/";
 @import "epp-mixins";
@@ -246,55 +243,11 @@
     margin-left:95.8333%;*margin-left:95.8023%
 }
 
-// Column Spacing
-
-.epp-air-8{
-    padding: 8px;
-    box-sizing:border-box;
-}
-.epp-air-left-8{
-    padding-left:8px;
-    box-sizing:border-box;  
-}
-.epp-air-right-8{
-    padding-right:8px;
-    box-sizing:border-box;  
-}
-.epp-air-top-8{
-    padding-top:8px;
-    box-sizing:border-box;  
-}
-.epp-air-bottom-8{
-    padding-bottom:8px;
-    box-sizing:border-box;  
-}
-.epp-air-16{
-    padding: 16px;
-    box-sizing:border-box;
-}
-.epp-air-left-16{
-    padding-left:16px;
-    box-sizing:border-box;  
-}
-.epp-air-right-16{
-    padding-right:16px;
-    box-sizing:border-box;  
-}
-.epp-air-top-16{
-    padding-top:16px;
-    box-sizing:border-box;  
-}
-.epp-air-bottom-16{
-    padding-bottom:16px;
-    box-sizing:border-box;  
-}
-
 //---------------------------------\\
 //----------Media Queries----------\\
 //---------------------------------\\
 
 //-----------Containers------------\\
-
 
 // Containers Phone 0 to 767
 
@@ -497,7 +450,9 @@
         max-width:768px;
     }
 }
+
 // Containers Desktop 1152 to 
+
 @media (min-width:1152px) and (max-width:1247px){
     .epp-ctn--xxl{
         max-width:1152px;
@@ -557,9 +512,6 @@
 // Columns Phone 0 to 767
 
 @media (max-width:767px){
-    .hidden--ph{
-        display:none!important;
-    }
     .epp-cl-1--ph{
         width:100%
     }
@@ -626,7 +578,7 @@
     .epp-cl-7-24--ph{
         width:29.1667%;*width:29.1357%
     }
-    .epp-cl-11-12{
+    .epp-cl-11-12--ph{
         width:91.6667%;*width:91.6357%
     }
     .epp-cl-11-24--ph{
@@ -734,46 +686,7 @@
 
     // Column Space Phone
 
-    .epp-air-8--ph{
-        padding: 8px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-8--ph{
-        padding-left:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-8--ph{
-        padding-right:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-8--ph{
-        padding-top:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-8--ph{
-        padding-bottom:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-16--ph{
-        padding: 16px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-16--ph{
-        padding-left:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-16--ph{
-        padding-right:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-16--ph{
-        padding-top:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-16--ph{
-        padding-bottom:16px;
-        box-sizing:border-box;  
-    }
+    
 }
 
 // Columns Tablet 768 to 1151
@@ -950,57 +863,11 @@
     .epp-of-23-24--tb{
         margin-left:95.8333%;*width:95.8023%
     }
-
-    // Column Space Tablet
-
-    .epp-air-8--tb{
-        padding: 8px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-8--tb{
-        padding-left:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-8--tb{
-        padding-right:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-8--tb{
-        padding-top:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-8--tb{
-        padding-bottom:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-16--tb{
-        padding: 16px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-16--tb{
-        padding-left:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-16--tb{
-        padding-right:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-16--tb{
-        padding-top:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-16--tb{
-        padding-bottom:16px;
-        box-sizing:border-box;  
-    }
 }
 
 // Columns Desktop from 1152
 
 @media (min-width:1152px){
-    .hidden--dt{
-        display:none!important;
-    }
     .epp-cl-1--dt{
         width:100%
     }
@@ -1170,46 +1037,4 @@
         margin-left:95.8333%;*margin-left:95.8023%
     }
 
-    // Columns Space Desktop
-
-    .epp-air-8--dt{
-        padding: 8px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-8--dt{
-        padding-left:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-8--dt{
-        padding-right:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-8--dt{
-        padding-top:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-8--dt{
-        padding-bottom:8px;
-        box-sizing:border-box;  
-    }
-    .epp-air-16--dt{
-        padding: 16px;
-        box-sizing:border-box;
-    }
-    .epp-air-left-16--dt{
-        padding-left:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-right-16--dt{
-        padding-right:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-top-16--dt{
-        padding-top:16px;
-        box-sizing:border-box;  
-    }
-    .epp-air-bottom-16--dt{
-        padding-bottom:16px;
-        box-sizing:border-box;  
-    }
 }

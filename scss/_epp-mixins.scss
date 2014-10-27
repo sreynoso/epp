@@ -1,3 +1,14 @@
+//---------------------------------\\
+//----------Table of Content-------\\
+//---------------------------------\\
+
+// 1 Font px to rem
+// 2 Responde to
+
+
+
+//------------Px to Rem------------\\
+
 @mixin font-rem($fontweight:null, $fontsize:null, $lineheight:null, $fontfamily:null) {
 
     @if $fontfamily !=null {
@@ -18,6 +29,9 @@
         font-weight: $fontweight;
     }
 }
+
+
+//------------Responde To------------\\
 
 @mixin respond-to($media) {
     @if $media == ph {
