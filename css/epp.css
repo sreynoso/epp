@@ -530,6 +530,9 @@ ul {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+[class*="epp-ctn"] * {
+  letter-spacing: normal;
+}
 
 .epp-ctn--xxl {
   max-width: 1344px;
@@ -1085,27 +1088,6 @@ ul {
 
   .epp-ctn--sm {
     max-width: 576px;
-  }
-}
-@media (min-width: 672px) and (max-width: 767px) {
-  .epp-ctn--xxl {
-    max-width: 672px;
-  }
-
-  .epp-ctn--xl {
-    max-width: 672px;
-  }
-
-  .epp-ctn--lg {
-    max-width: 672px;
-  }
-
-  .epp-ctn--md {
-    max-width: 672px;
-  }
-
-  .epp-ctn--sm {
-    max-width: 672px;
   }
 }
 @media (min-width: 672px) and (max-width: 767px) {
