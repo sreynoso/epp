@@ -61,7 +61,17 @@
     padding-left: 8px;
     padding-right: 8px;
 }
-
+.epp-ctn--gtr-inside > [class*="epp-cl-"]{
+    box-sizing:border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    &:first-child{
+        padding-left: 0px;
+    }
+    &:last-child{
+        padding-right: 0px;
+    }
+}
 
 //--------------Columns------------\\
 

@@ -560,6 +560,18 @@ ul {
   padding-right: 8px;
 }
 
+.epp-ctn--gtr-inside > [class*="epp-cl-"] {
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.epp-ctn--gtr-inside > [class*="epp-cl-"]:first-child {
+  padding-left: 0px;
+}
+.epp-ctn--gtr-inside > [class*="epp-cl-"]:last-child {
+  padding-right: 0px;
+}
+
 [class*="epp-cl-"] {
   display: inline-block;
   vertical-align: top;
