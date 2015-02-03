@@ -2694,13 +2694,13 @@ ul {
   display: table-cell;
 }
 .display-table--top > * {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 .display-table--middle > * {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 .display-table--bottom > * {
-  vertical-align: bottom;
+  vertical-align: bottom !important;
 }
 
 .ellipsis {
