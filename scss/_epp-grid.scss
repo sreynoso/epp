@@ -71,6 +71,10 @@
     &:last-child{
         padding-right: 0px;
     }
+    &.epp-cl-1,.epp-cl-1--ph,.epp-cl-1--tb,.epp-cl-1--dt{
+    	padding-left: 0;
+    	padding-right: 0;
+    }
 }
 
 //--------------Columns------------\\
