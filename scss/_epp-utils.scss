@@ -8,16 +8,19 @@
 //		1-3 Align
 //		1-4 Hidden
 //      1-5 Float
+//      1-6 Display 
+//      1-7 List
+//      1-8 Table
 // 2 Media Queries
 //      2-1 Air
 //      2-2 Space
 //		2-3 Align
 //		2-4 Hidden
 //      2-5 Float
+//      2-6 Display Table
 
 
 @import "compass/css3/";
-@import "epp-mixins";
 
 .input--block{
   width: 100%;
@@ -26,28 +29,7 @@
   width: 100%;
 }
 
-.display-table{
-    display:table;
-    height: 100%;
-    & > *{
-        display:table-cell;
-    }
-    &--top{
-        & > *{
-            vertical-align: top!important; 
-        }
-    }
-    &--middle{
-        & > *{
-            vertical-align: middle!important; 
-        } 
-    }
-    &--bottom{
-        & > *{
-            vertical-align: bottom!important; 
-        }
-    } 
-}
+
 .ellipsis{
 	overflow: hidden;
 	white-space: nowrap;
@@ -61,6 +43,26 @@
 
 //Air
 
+.epp-air-0{
+    padding: 0px!important;
+    box-sizing:border-box;
+}
+.epp-air-left-0{
+    padding-left:0px!important;
+    box-sizing:border-box;  
+}
+.epp-air-right-0{
+    padding-right:0px!important;
+    box-sizing:border-box;  
+}
+.epp-air-top-0{
+    padding-top:0px!important;
+    box-sizing:border-box;  
+}
+.epp-air-bottom-0{
+    padding-bottom:0px!important;
+    box-sizing:border-box;  
+}
 .epp-air-8{
     padding: 8px!important;
     box-sizing:border-box;
@@ -141,9 +143,44 @@
     padding-bottom:32px!important;
     box-sizing:border-box;  
 }
+.epp-air-40{
+    padding: 40px!important;
+    box-sizing:border-box;
+}
+.epp-air-left-40{
+    padding-left:40px!important;
+    box-sizing:border-box;  
+}
+.epp-air-right-40{
+    padding-right:40px!important;
+    box-sizing:border-box;  
+}
+.epp-air-top-40{
+    padding-top:40px!important;
+    box-sizing:border-box;  
+}
+.epp-air-bottom-40{
+    padding-bottom:40px!important;
+    box-sizing:border-box;  
+}
 
 // Space
 
+.epp-space-0{
+    margin:0px;
+}
+.epp-space-left-0{
+    margin-left:0px;
+}
+.epp-space-right-0{
+    margin-right:0px;
+}
+.epp-space-top-0{
+    margin-top:0px;
+}
+.epp-space-bottom-0{
+    margin-bottom:0px;
+}
 .epp-space-8{
     margin:8px;
 }
@@ -204,6 +241,21 @@
 .epp-space-bottom-32{
     margin-bottom:32px;
 }
+.epp-space-40{
+    margin:40px;
+}
+.epp-space-left-40{
+    margin-left:40px;
+}
+.epp-space-right-40{
+    margin-right:40px;
+}
+.epp-space-top-40{
+    margin-top:40px;
+}
+.epp-space-bottom-40{
+    margin-bottom:40px;
+}
 
 //Align
 
@@ -232,6 +284,56 @@
     float: right;
 }
 
+//Display Table
+
+.display-table{
+    display:table;
+    width: 100%;
+    & > *{
+        display:table-cell;
+        vertical-align: middle!important; 
+    }
+    &--top{
+        & > *{
+            vertical-align: top!important; 
+        }
+    }
+    &--middle{
+        & > *{
+            vertical-align: middle!important; 
+        } 
+    }
+    &--bottom{
+        & > *{
+            vertical-align: bottom!important; 
+        }
+    } 
+}
+
+//List
+.list--unstyle {
+    list-style:none;
+
+    & li {
+        margin-left:0px;
+    }
+
+}
+
+//table
+.table--unstyle {
+    background:transparent;
+    border:none;
+    & tr td {
+        padding:0px;
+        border:none;
+    }
+    & tr th {
+        padding:0px;
+        border:none;
+    }
+}
+
 //---------------------------------\\
 //----------Media Queries----------\\
 //---------------------------------\\
@@ -242,6 +344,26 @@
     
     // Air Phone
 
+    .epp-air-0--ph{
+        padding: 0px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-0--ph{
+        padding-left:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-0--ph{
+        padding-right:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-0--ph{
+        padding-top:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-0--ph{
+        padding-bottom:0px!important;
+        box-sizing:border-box;  
+    }
 	.epp-air-8--ph{
         padding: 8px!important;
         box-sizing:border-box;
@@ -322,9 +444,44 @@
         padding-bottom:32px!important;
         box-sizing:border-box;  
     }
+    .epp-air-40--ph{
+        padding: 40px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-40--ph{
+        padding-left:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-40--ph{
+        padding-right:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-40--ph{
+        padding-top:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-40--ph{
+        padding-bottom:40px!important;
+        box-sizing:border-box;  
+    }
 
     // Space Phone
 
+    .epp-space-0--ph{
+        margin: 0px!important;
+    }
+    .epp-space-left-0--ph{
+        margin-left:0px!important;  
+    }
+    .epp-space-right-0--ph{
+        margin-right:0px!important; 
+    }
+    .epp-space-top-0--ph{
+        margin-top:0px!important; 
+    }
+    .epp-space-bottom-0--ph{
+        margin-bottom:0px!important; 
+    }
 	.epp-space-8--ph{
 	    margin:8px;
 	}
@@ -385,6 +542,21 @@
     .epp-space-bottom-32--ph{
         margin-bottom:32px;
     }
+    .epp-space-40--ph{
+        margin:40px;
+    }
+    .epp-space-left-40--ph{
+        margin-left:40px;
+    }
+    .epp-space-right-40--ph{
+        margin-right:40px;
+    }
+    .epp-space-top-40--ph{
+        margin-top:40px;
+    }
+    .epp-space-bottom-40--ph{
+        margin-bottom:40px;
+    }
         
     // Align Phone
 
@@ -412,6 +584,38 @@
     .float-right--ph{
         float: right;
     }
+
+    //Display Table Phone
+
+    .display-table{
+        &--ph{
+            display: table;
+            width: 100%;
+            & > *{
+                display: table-cell;
+                vertical-align: middle!important;
+            }
+        }
+        &--top--ph {
+            @extend .display-table--ph;
+            & > *{
+                vertical-align: top!important;
+            }
+        }
+        &--middle--ph {
+            @extend .display-table--ph;
+            & > *{
+                vertical-align: middle!important;
+            }
+        }
+        &--bottom--ph {
+            @extend .display-table--ph;
+            & > *{
+                vertical-align: bottom!important;
+            }
+        }
+    } 
+
 }
 
 
@@ -420,6 +624,26 @@
 
     // Air Tablet
 
+    .epp-air-0--tb{
+        padding: 0px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-0--tb{
+        padding-left:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-0--tb{
+        padding-right:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-0--tb{
+        padding-top:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-0--tb{
+        padding-bottom:0px!important;
+        box-sizing:border-box;  
+    }
     .epp-air-8--tb{
         padding: 8px!important;
         box-sizing:border-box;
@@ -500,9 +724,44 @@
         padding-bottom:32px!important;
         box-sizing:border-box;  
     }
+    .epp-air-40--tb{
+        padding: 40px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-40--tb{
+        padding-left:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-40--tb{
+        padding-right:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-40--tb{
+        padding-top:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-40--tb{
+        padding-bottom:40px!important;
+        box-sizing:border-box;  
+    }
 
     // Space Table
 
+    .epp-space-0--tb{
+        margin:0px;
+    }
+    .epp-space-left-0--tb{
+        margin-left:0px;
+    }
+    .epp-space-right-0--tb{
+        margin-right:0px;
+    }
+    .epp-space-top-0--tb{
+        margin-top:0px;
+    }
+    .epp-space-bottom-0--tb{
+        margin-bottom:0px;
+    }
 	.epp-space-8--tb{
 	    margin:8px;
 	}
@@ -563,6 +822,21 @@
     .epp-space-bottom-32--tb{
         margin-bottom:32px;
     }
+    .epp-space-40--tb{
+        margin:40px;
+    }
+    .epp-space-left-40--tb{
+        margin-left:40px;
+    }
+    .epp-space-right-40--tb{
+        margin-right:40px;
+    }
+    .epp-space-top-40--tb{
+        margin-top:40px;
+    }
+    .epp-space-bottom-40--tb{
+        margin-bottom:40px;
+    }
 
     // Align Table
 
@@ -590,6 +864,37 @@
     .float-right--tb{
         float: right;
     }
+    
+    //Display Table Tablet
+
+    .display-table{
+        &--tb{
+            display: table;
+            width: 100%;
+            & > *{
+                display: table-cell;
+                vertical-align: middle!important;
+            }
+        }
+        &--top--tb {
+            @extend .display-table--tb;
+            & > *{
+                vertical-align: top!important;
+            }
+        }
+        &--middle--tb {
+            @extend .display-table--tb;
+            & > *{
+                vertical-align: middle!important;
+            }
+        }
+        &--bottom--tb {
+            @extend .display-table--tb;
+            & > *{
+                vertical-align: bottom!important;
+            }
+        }
+    }   
 }
 
 // Desktop from 1152
@@ -598,6 +903,26 @@
 
 	 // Air Desktop
 
+    .epp-air-0--dt{
+        padding: 0px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-0--dt{
+        padding-left:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-0--dt{
+        padding-right:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-0--dt{
+        padding-top:0px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-0--dt{
+        padding-bottom:0px!important;
+        box-sizing:border-box;  
+    }
     .epp-air-8--dt{
         padding: 8px!important;
         box-sizing:border-box;
@@ -678,9 +1003,44 @@
         padding-bottom:32px!important;
         box-sizing:border-box;  
     }
+    .epp-air-40--dt{
+        padding: 40px!important;
+        box-sizing:border-box;
+    }
+    .epp-air-left-40--dt{
+        padding-left:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-right-40--dt{
+        padding-right:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-top-40--dt{
+        padding-top:40px!important;
+        box-sizing:border-box;  
+    }
+    .epp-air-bottom-40--dt{
+        padding-bottom:40px!important;
+        box-sizing:border-box;  
+    }
 
     // Columns Space Desktop
 
+    .epp-space-0--dt{
+        margin:0px;
+    }
+    .epp-space-left-0--dt{
+        margin-left:0px;
+    }
+    .epp-space-right-0--dt{
+        margin-right:0px;
+    }
+    .epp-space-top-0--dt{
+        margin-top:0px;
+    }
+    .epp-space-bottom-0--dt{
+        margin-bottom:0px;
+    }
 	.epp-space-8--dt{
 	    margin:8px;
 	}
@@ -741,6 +1101,21 @@
     .epp-space-bottom-32--dt{
         margin-bottom:32px;
     }
+    .epp-space-40--dt{
+        margin:40px;
+    }
+    .epp-space-left-40--dt{
+        margin-left:40px;
+    }
+    .epp-space-right-40--dt{
+        margin-right:40px;
+    }
+    .epp-space-top-40--dt{
+        margin-top:40px;
+    }
+    .epp-space-bottom-40--dt{
+        margin-bottom:40px;
+    }
 
     // Align Desktop
 
@@ -768,4 +1143,35 @@
     .float-right--dt{
         float: right;
     }
+
+    //Display Table Desktop
+
+    .display-table{
+        &--dt{
+            display: table;
+            width: 100%;
+            & > *{
+                display: table-cell;
+                vertical-align: middle!important;
+            }
+        }
+        &--top--dt {
+            @extend .display-table--dt;
+            & > *{
+                vertical-align: top!important;
+            }
+        }
+        &--middle--dt {
+            @extend .display-table--dt;
+            & > *{
+                vertical-align: middle!important;
+            }
+        }
+        &--bottom--dt {
+            @extend .display-table--dt;
+            & > *{
+                vertical-align: bottom!important;
+            }
+        }
+    }    
 }

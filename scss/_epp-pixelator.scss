@@ -31,14 +31,12 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 body{
     height:100%;
     margin:0;
     padding:0;
     @include font-rem(null,16px,24px,sans-serif);
 }
-
 audio,
 canvas,
 video {
@@ -55,7 +53,7 @@ a{
 	}
 	&:visited {
 		text-decoration: line-through;
-		}
+	}
 	&:hover {
 		text-decoration: underline;
 	}
@@ -179,7 +177,6 @@ h5{
 	@include font-rem(bold,24px,32px,null);
 }
 h6{
-	font:bold 16px/24px sans-serif;
 	margin-bottom:8px;
 	@include font-rem(bold,16px,24px,null);
 }
@@ -247,7 +244,7 @@ nav{
 	display: block;
 }
 ol{
-	@include font-rem(16px,24px);
+	@include font-rem(null, 16px,24px);
 	list-style-position: inside;
 	margin-bottom:8px;
 }
@@ -278,7 +275,7 @@ select{
 	height:32px;
 	border:1px solid;
 	background:#fff;
-	padding:8px;
+	padding: 0 0 0 8px;
 	vertical-align:top;
 	@include font-rem(null,16px,24px,null);	
 	@include border-radius(2px);
@@ -299,7 +296,7 @@ summary {
 }
 sup{
 	@include font-rem(null,12px,12px,null);
-	vertical-align: sup;
+	vertical-align: top;
 	height: 10px;
 	display: inline-block;
 }
