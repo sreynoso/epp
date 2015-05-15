@@ -9,8 +9,9 @@
 //		1-4 Hidden
 //      1-5 Float
 //      1-6 Display 
-//      1-7 List
-//      1-8 Table
+//      1-7 List Unstyle
+//      1-8 Table Unstyle
+//      1-9 Image Responsive
 // 2 Media Queries
 //      2-1 Air
 //      2-2 Space
@@ -18,6 +19,7 @@
 //		2-4 Hidden
 //      2-5 Float
 //      2-6 Display Table
+
 
 
 @import "compass/css3/";
@@ -268,6 +270,15 @@
 .align-center{
 	text-align: center;
 }
+.align-top{
+    vertical-align: top;
+}
+.align-middle{
+    vertical-align: middle;
+}
+.align-bottom{
+    vertical-align: bottom;
+}
 
 // Hidden
 
@@ -307,7 +318,10 @@
         & > *{
             vertical-align: bottom!important; 
         }
-    } 
+    }
+    &--full {
+        height:100%;
+    }
 }
 
 //List
@@ -332,6 +346,11 @@
         padding:0px;
         border:none;
     }
+}
+
+//Image Responsive
+.img-responsive {
+    width: 100%;
 }
 
 //---------------------------------\\
@@ -569,7 +588,15 @@
 	.align-center--ph{
 		text-align: center;
 	}
-    
+    .align-top--ph{
+    vertical-align: top;
+    }
+    .align-middle--ph{
+        vertical-align: middle;
+    }
+    .align-bottom--ph{
+        vertical-align: bottom;
+    }
     // Hidden Phone
 
 	.hidden--ph{
@@ -613,6 +640,9 @@
             & > *{
                 vertical-align: bottom!important;
             }
+        }
+        &--full {
+            height:100%;
         }
     } 
 
@@ -849,7 +879,15 @@
 	.align-center--tb{
 		text-align: center;
 	}
-
+    .align-top--tb{
+    vertical-align: top;
+    }
+    .align-middle--tb{
+        vertical-align: middle;
+    }
+    .align-bottom--tb{
+        vertical-align: bottom;
+    }
     // Hidden Table
 
 	.hidden--tb{
@@ -893,6 +931,9 @@
             & > *{
                 vertical-align: bottom!important;
             }
+        }
+        &--full {
+            height:100%;
         }
     }   
 }
@@ -1128,6 +1169,15 @@
 	.align-center--dt{
 		text-align: center;
 	}
+    .align-top--dt{
+        vertical-align: top;
+    }
+    .align-middle--dt{
+        vertical-align: middle;
+    }
+    .align-bottom--dt{
+        vertical-align: bottom;
+    }
 
     // Hidden Desktop
 
@@ -1172,6 +1222,9 @@
             & > *{
                 vertical-align: bottom!important;
             }
+        }
+        &--full {
+            height:100%;
         }
     }    
 }
